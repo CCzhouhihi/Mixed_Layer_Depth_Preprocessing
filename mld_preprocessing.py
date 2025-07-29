@@ -7,7 +7,6 @@ from tools.pre_function import getll_nc,getdata_nc,interp2d_array,write_nc,inter
 
 ### interpolate MLD into rough grids from 20190101 to 20190103
 
-##### an example using getdata_nc,getll_nc,interp2d_array,write_nc #####
 ### interpolate days separately and combine with nco
 
 # Basic settings
@@ -67,7 +66,6 @@ os.system('ncrcat -O HYCOM_inv_20190101_int.nc HYCOM_inv_20190102_int.nc HYCOM_i
 
 
 
-##### an example using interp2d_nc #####
 ### generate landmask file from one day's interpolated results and interpolate all days together
 
 # Step1: prepare mask file
