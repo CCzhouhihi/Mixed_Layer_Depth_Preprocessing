@@ -1,6 +1,6 @@
 # NetCDF Interpolation and Preprocessing Toolkit
 
-This project provides Python tools for reading, interpolating, and writing 2D NetCDF data. It is designed for oceanographic or meteorological data workflows, such as regridding mixed layer depth fields.
+This project implements a workflow for reading, interpolating, and writing 2D NetCDF data, applied to oceanographic or meteorological datasets such as mixed layer depth fields.
 
 
 ## Project Contents
