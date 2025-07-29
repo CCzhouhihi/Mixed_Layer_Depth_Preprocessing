@@ -9,7 +9,7 @@ This project provides Python tools for reading, interpolating, and writing 2D Ne
 - `tools/`: Core utilities for NetCDF operations
   - `pre_function.py`: Includes five key functions:
     - `write_nc`: Write arrays and dimensions to an existing or new NetCDF file
-    - `interp2d_nc`: Interpolate between two NetCDF files using a mask (not recommended)
+    - `interp2d_nc`: Interpolate between two NetCDF files using a mask
     - `interp2d_array`: 2D linear interpolation on NumPy arrays
     - `getdata_nc`: Read and subset data from a NetCDF file
     - `getll_nc`: Extract longitude and latitude arrays
