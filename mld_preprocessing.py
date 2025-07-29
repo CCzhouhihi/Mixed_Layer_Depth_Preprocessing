@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 import os
 import numpy as np
 from tools.pre_function import getll_nc,getdata_nc,interp2d_array,write_nc,interp2d_nc
@@ -117,6 +114,12 @@ write_nc(
     ['longitude','latitude','MLD_Tdiff_est','MLD_Tdiff_dia'],
     ['longitude','latitude',('time','latitude','lontitude'),('time','latitude','lontitude')],
     ['2019-01-01','2019-01-02','2019-01-03'], # time list                                                                         # time
+)
+
+
+
+
+
 )
 
 
