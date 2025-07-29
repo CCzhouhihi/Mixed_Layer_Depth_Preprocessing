@@ -1,0 +1,38 @@
+netcdf HYCOMnwp_mld {
+dimensions:
+	time = UNLIMITED ; // (1 currently)
+	latitude = 186 ;
+	longitude = 53 ;
+variables:
+	float MLD_Tdiff_dia(time, latitude, longitude) ;
+		MLD_Tdiff_dia:long_name = "Ocean Mixed Layer Depth diagnosed" ;
+		MLD_Tdiff_dia:threshold = "potential temperature threshold 0.2K" ;
+		MLD_Tdiff_dia:depth_refered = "10m below sea surface" ;
+		MLD_Tdiff_dia:positive = "down" ;
+		MLD_Tdiff_dia:units = "m" ;
+		MLD_Tdiff_dia:axis = "Z" ;
+	float MLD_Tdiff_est(time, latitude, longitude) ;
+		MLD_Tdiff_est:long_name = "Ocean Mixed Layer Depth estimated by AI" ;
+		MLD_Tdiff_est:threshold = "potential temperature threshold 0.2K" ;
+		MLD_Tdiff_est:depth_refered = "10m below sea surface" ;
+		MLD_Tdiff_est:positive = "down" ;
+		MLD_Tdiff_est:units = "m" ;
+		MLD_Tdiff_est:axis = "Z" ;
+	double latitude(latitude) ;
+		latitude:standard_name = "latitude" ;
+		latitude:units = "degree_north" ;
+		latitude:axis = "Y" ;
+	double longitude(longitude) ;
+		longitude:standard_name = "longitude" ;
+		longitude:units = "degree_east" ;
+		longitude:modulo = "360 degrees" ;
+		longitude:axis = "X" ;
+	double time(time) ;
+		time:units = "hours since 2000-01-01 00:00:00" ;
+		time:time_origin = "2000-01-01 00:00:00" ;
+		time:calendar = "gregorian" ;
+		time:axis = "T" ;
+
+// global attributes:
+		:TITILE = "HYCOM MLD in Northwest Pacific, including diagnosis & AI estimation" ;
+}
