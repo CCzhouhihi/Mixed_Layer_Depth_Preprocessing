@@ -24,7 +24,7 @@ This project implements a workflow for reading, interpolating, and writing 2D Ne
 
 ## Usage
 
-Run `ssh_preprocessing.py`.
+Run `mld_preprocessing.py`.
 
 ## Notes
 
