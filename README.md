@@ -13,7 +13,7 @@ This project implements a workflow for reading, interpolating, and writing 2D Ne
     - `interp2d_array`: 2D linear interpolation on NumPy arrays
     - `getdata_nc`: Read and subset data from a NetCDF file
     - `getll_nc`: Extract longitude and latitude arrays
-- `ssh_preprocessing.py`: Example script for sea surface height preprocessing
+- `mld_preprocessing.py`: Example script for sea surface height preprocessing
 - `*.cdl`: CDL files used with `ncgen` to create NetCDF templates
   - `nwp_mask.cdl`, `nwp_mld.cdl`: Templates for target grid and result file structure
 - `*.nc`: Input and intermediate NetCDF datasets
