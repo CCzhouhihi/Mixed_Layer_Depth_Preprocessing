@@ -1,4 +1,4 @@
-# NetCDF Interpolation and Preprocessing Toolkit
+# Mixed Layer Depth Preprocessing 
 
 This project implements a workflow for reading, interpolating, and writing 2D NetCDF data, applied to oceanographic or meteorological datasets such as mixed layer depth fields.
 
